@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dropdown-profile-menu';
+  ngOnInit(){
+    var profile:any=document.getElementById("profile");
+    var dropdown:any=document.getElementById("dropdown")
+    profile.onclick=function(){
+      dropdown.classList.toggle("show")
+    }
+  }
 }

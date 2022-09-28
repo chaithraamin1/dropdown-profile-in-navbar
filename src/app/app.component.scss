@@ -1,0 +1,103 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+}
+nav{
+    background: #1a1a1a;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav .logo{
+    width: 100px;
+}
+nav .profile{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 50%;
+    background: white;
+   
+}
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.sub-menu-wrap .sub-menu{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+.sub-menu-wrap .sub-menu .user-info{
+    display: flex;
+    align-items: center;
+}
+.sub-menu-wrap .sub-menu .user-info h3{
+    font-weight: 500;
+}
+.sub-menu-wrap .sub-menu .user-info img{
+    width: 60px;
+    margin-right: 15px;
+}
+hr{
+    margin: 15px 0 10px;
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 12px 0;
+    color: #525252
+}
+.sub-menu-link img{
+    width: 40px;
+    margin-right: 15px;
+    background: #e5e5e5;
+    padding: 8px;
+    border-radius: 50%;
+}
+.sub-menu-link p{
+  width: 100%;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+.sub-menu-wrap.show{
+    max-height: 400px;
+}
+
